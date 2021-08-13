@@ -73,7 +73,7 @@ public class PersonController {
         try {
             return personService.updatePerson(person);
         } catch (Exception ex) {
-            String message = "Erro ao buscar Pessoa";
+            String message = "Erro ao atualizar Pessoa";
             log.error(message);
             return message + "Erro : " + ex.getMessage();
         }
@@ -132,7 +132,7 @@ public class PersonController {
         try {
             return personService.savePerson(person);
         } catch (Exception ex) {
-            String message = "Erro ao validar pessoa";
+            String message = "Erro ao salvar pessoa";
             log.error(message);
             return message + "Erro : " +ex.getMessage();
         }
@@ -153,7 +153,7 @@ public class PersonController {
             personService.deletePerson(id);
             return "Sucesso";
         } catch (Exception ex) {
-            String message = "Erro ao validar pessoa";
+            String message = "Erro ao deletar pessoa";
             log.error(message);
             return message + "Erro : " +ex.getMessage();
         }
